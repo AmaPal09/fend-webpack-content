@@ -56,5 +56,19 @@ module.exports = {
 -Execute
 ``` npm run build```
 
+Step 2:
+-To the webpack.config.js add entry point in the module
+```
+module.exports = {
+	entry: './src/client/index.js',
+}
+```
+-Add client folder to source
+-Add index.js file to client
+-Add alert to index.js
+``` alert('Hi there!');```
+- ``` npm run build```
+- Dist folder created in project folder
+- main.js add to dist folder
 
 
