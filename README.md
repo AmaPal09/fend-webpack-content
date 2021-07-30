@@ -72,3 +72,30 @@ module.exports = {
 - main.js add to dist folder
 
 
+Step 3:
+-Install babel to the developer version
+``` npm i -D @babel/core @babel/preset-env babel-loader```
+	-D will install these as development dependencies.
+
+-Create a new babel config file .babelrc
+-Config babel
+``` { ‘presets’: ['@babel/preset-env'] } ```
+
+-Add rules for using babel in webpack
+```
+module: {
+            rules: [
+                    {
+                test: '/\.js$/',
+                exclude: /node_modules/,
+                loader: "babel-loader"
+                    }
+            ]
+    }
+```
+
+- Import js files in index.js
+- Export from original file
+
+- Build again
+``` npm run build ```
