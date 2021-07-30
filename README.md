@@ -97,5 +97,7 @@ module: {
 - Import js files in index.js
 - Export from original file
 
+- Add the bundled files to html
+
 - Build again
 ``` npm run build ```
