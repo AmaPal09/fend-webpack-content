@@ -31,5 +31,26 @@ npm install
 npm start
 
 Step 1:
-- ``` npm i webpack@4.35.3```
-- ``` npm i webpack-cli@3.3.5```
+-Install packages
+``` npm i webpack@4.35.3```
+``` npm i webpack-cli@3.3.5```
+-Following dependencies were added to package.json
+``` "webpack": "^4.43.0",```
+``` "webpack-cli": "^3.3.11" ```
+-To the scripts section of package.json add
+```  "build": "webpack" ```
+-Add a devDependencies block
+```
+"devDependencies":{
+  "webpack-dev-server": "^3.11.0",
+}
+```
+
+-Create new file webpack.config.js
+-To webpack.config.js add
+```
+const path = require("path")
+const webpack = require("webpack")
+module.exports = {
+}
+```
