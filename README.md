@@ -11,7 +11,7 @@ If you want to follow along with the course, you will start from the master and 
 - [5-webpack-mode](https://github.com/udacity/fend-webpack-content/tree/5-webpack-mode)
 - [6-webpack-for-convenience](https://github.com/udacity/fend-webpack-content/tree/6-webpack-for-convenience)
 
-Each one is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step should also match to a git commit if you look at the history) which you can use as a checklist when setting up your own projects. 
+Each one is a step along the path to creating a fully functional webpack setup. In each branch, there will be a documentation file that lists out the steps taken in that branch (each step should also match to a git commit if you look at the history) which you can use as a checklist when setting up your own projects.
 
 ## Get Up and Running
 
@@ -25,3 +25,11 @@ git clone -- git@github.com:[your-user-name]/webpack-express.git --
 - ```npm install```
 - ```npm start``` to start the app
 - this app runs on localhost:8080, but you can of course edit that in index.js
+
+Step 0:
+npm install
+npm start
+
+Step 1:
+- ``` npm i webpack@4.35.3```
+- ``` npm i webpack-cli@3.3.5```
