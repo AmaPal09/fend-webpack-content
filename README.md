@@ -45,7 +45,6 @@ Step 1:
   "webpack-dev-server": "^3.11.0",
 }
 ```
-
 -Create new file webpack.config.js
 -To webpack.config.js add
 ```
@@ -54,3 +53,8 @@ const webpack = require("webpack")
 module.exports = {
 }
 ```
+-Execute
+``` npm run build```
+
+
+
