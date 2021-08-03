@@ -143,3 +143,26 @@ Plugin addition successful when index.html file in the dist folder
 Error: typeerror cannot read property 'tap' of undefined htmlwebpackplugin
 latest plugin was installed but webpack version is not the latest one.
 Installed "html-webpack-plugin": "^3.2.0" instead
+
+## Step 5
+Mode setup
+
+-Duplicate webpack.config.js and rename it to webpack.prod.js
+    - Add mode in module.export as production
+    ```
+        mode: 'production'
+    ```
+
+-Rename webpack.config.js file webpack.dev.js
+    -Add mode in module.export as dev and add a source map as dev tools
+    ```
+        mode: 'development',
+        devtool: 'source-map',
+    ```
+-Add build modes in package.json to configure dev and prodcution mode
+    ```
+        "scripts": {
+        "build-prod": "webpack --config webpack.prod.js",
+        "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
+    },
+    ```
