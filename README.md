@@ -122,8 +122,7 @@ plugins: [
     })
 ]
 ```
-
--Remove dist folder and rebuild.
+- ** Remove dist folder and rebuild. **
 Plugin addition successful when index.html file in the dist folder
 
 -Remove all references to the scripts in the html file as they are added by webpack
@@ -140,3 +139,7 @@ Plugin addition successful when index.html file in the dist folder
 	app.use(express.static('dist'))
 ```
 
+- ** Error handling **
+Error: typeerror cannot read property 'tap' of undefined htmlwebpackplugin
+latest plugin was installed but webpack version is not the latest one.
+Installed "html-webpack-plugin": "^3.2.0" instead
