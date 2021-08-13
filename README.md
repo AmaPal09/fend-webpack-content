@@ -144,7 +144,7 @@ Error: typeerror cannot read property 'tap' of undefined htmlwebpackplugin
 latest plugin was installed but webpack version is not the latest one.
 Installed "html-webpack-plugin": "^3.2.0" instead
 
-## Step 5
+### Step 5
 Mode setup
 
 -Duplicate webpack.config.js and rename it to webpack.prod.js
@@ -165,4 +165,21 @@ Mode setup
         "build-prod": "webpack --config webpack.prod.js",
         "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
     },
+    ```
+
+### Step 6
+Webpack convenience
+
+- To clean the /dist folder before each build, so that only used files will be generated use clean-webpack-plugin
+```
+    npm install --save-dev clean-webpack-plugin
+```
+
+-Require it in the dev configuration and instantiate it
+```
+    const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+```
+    New instance in plugins
+    ```
+        new CleanWebpackPlugin(),
     ```

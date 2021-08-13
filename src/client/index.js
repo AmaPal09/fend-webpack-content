@@ -3,3 +3,5 @@ import { checkForName } from './js/nameChecker'
 
 console.log('We just added files');
 alert('Hi there!');
+alert('Hi there!');
+alert('Hi there!');
